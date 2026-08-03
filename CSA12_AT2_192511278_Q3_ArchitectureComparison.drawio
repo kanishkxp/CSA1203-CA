@@ -1,0 +1,136 @@
+<mxfile host="app.diagrams.net" agent="Claude">
+  <diagram name="Q3_8085_8086_vs_Modern_Architectures" id="Q3_8085_8086_vs_Modern_Architectures">
+    <mxGraphModel dx="1030" dy="562" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1040" pageHeight="560" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;fontSize=15;fontStyle=1;fontColor=#333300;" value="PROCESSOR ARCHITECTURE&#xa;EVOLUTION" vertex="1">
+          <mxGeometry height="70" width="280" x="380" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="c85" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DDEBF7;strokeColor=#6C9BD1;fontSize=13;fontStyle=1;" value="8085 (1976)" vertex="1">
+          <mxGeometry height="45" width="200" x="40" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="c85feat" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF3FB;strokeColor=#6C9BD1;fontSize=12;" value="No pipelining,&#xa;simple instruction set" vertex="1">
+          <mxGeometry height="50" width="200" x="40" y="365" as="geometry" />
+        </mxCell>
+        <mxCell id="c86" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E2EFDA;strokeColor=#82B366;fontSize=13;fontStyle=1;" value="8086 (1978)" vertex="1">
+          <mxGeometry height="45" width="200" x="280" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="c86feat" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF7E4;strokeColor=#82B366;fontSize=12;" value="Basic 2-stage&#xa;pipelining introduced" vertex="1">
+          <mxGeometry height="50" width="200" x="280" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="modern" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCE4D6;strokeColor=#D79B65;fontSize=13;fontStyle=1;" value="Modern Architectures" vertex="1">
+          <mxGeometry height="45" width="220" x="520" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="ryzen" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2E8;strokeColor=#D79B65;fontSize=12;" value="AMD Ryzen&#xa;x86 CISC, multi-core,&#xa;chiplet design, high clocks" vertex="1">
+          <mxGeometry height="65" width="220" x="520" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="compare" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8D7DA;strokeColor=#C0504D;fontSize=13;fontStyle=1;" value="Comparison Dimensions" vertex="1">
+          <mxGeometry height="45" width="220" x="780" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="advance" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FBE5E7;strokeColor=#C0504D;fontSize=12;" value="Architectural Advances&#xa;(pipelining, OOO exec, cache)" vertex="1">
+          <mxGeometry height="55" width="220" x="780" y="455" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="title" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;elbow=vertical;strokeColor=#666666;fontSize=10;jettySize=auto;" target="c85" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="c85" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;elbow=vertical;strokeColor=#666666;fontSize=10;jettySize=auto;" target="c85bit" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="c85" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;elbow=vertical;strokeColor=#666666;fontSize=10;jettySize=auto;" target="c85addr" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="c85" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;elbow=vertical;strokeColor=#666666;fontSize=10;jettySize=auto;" target="c85feat" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="title" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;elbow=vertical;strokeColor=#666666;fontSize=10;jettySize=auto;" target="c86" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="c86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;elbow=vertical;strokeColor=#666666;fontSize=10;jettySize=auto;" target="c86bit" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="c86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;elbow=vertical;strokeColor=#666666;fontSize=10;jettySize=auto;" target="c86addr" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="c86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;elbow=vertical;strokeColor=#666666;fontSize=10;jettySize=auto;" target="c86feat" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="title" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;elbow=vertical;strokeColor=#666666;fontSize=10;jettySize=auto;" target="modern" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="modern" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;elbow=vertical;strokeColor=#666666;fontSize=10;jettySize=auto;" target="arm" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="modern" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;elbow=vertical;strokeColor=#666666;fontSize=10;jettySize=auto;" target="intel" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="modern" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;elbow=vertical;strokeColor=#666666;fontSize=10;jettySize=auto;" target="ryzen" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="title" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;elbow=vertical;strokeColor=#666666;fontSize=10;jettySize=auto;" target="compare" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="compare" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;elbow=vertical;strokeColor=#666666;fontSize=10;jettySize=auto;" target="instrset" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="compare" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;elbow=vertical;strokeColor=#666666;fontSize=10;jettySize=auto;" target="addrmodes" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" source="compare" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;elbow=vertical;strokeColor=#666666;fontSize=10;jettySize=auto;" target="proccap" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" edge="1" parent="1" source="compare" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;elbow=vertical;strokeColor=#666666;fontSize=10;jettySize=auto;" target="advance" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d1" edge="1" parent="1" source="c85feat" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;elbow=vertical;strokeColor=#666666;fontSize=10;jettySize=auto;dashed=1;strokeColor=#999999;" target="c86feat" value="evolves into">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d2" edge="1" parent="1" source="c86feat" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;elbow=vertical;strokeColor=#666666;fontSize=10;jettySize=auto;dashed=1;strokeColor=#999999;" target="advance" value="evolves into">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d3" edge="1" parent="1" source="c85addr" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;elbow=vertical;strokeColor=#666666;fontSize=10;jettySize=auto;dashed=1;strokeColor=#999999;" target="addrmodes" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d4" edge="1" parent="1" source="c86addr" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;elbow=vertical;strokeColor=#666666;fontSize=10;jettySize=auto;dashed=1;strokeColor=#999999;" target="addrmodes" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d5" edge="1" parent="1" source="arm" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;elbow=vertical;strokeColor=#666666;fontSize=10;jettySize=auto;dashed=1;strokeColor=#999999;" target="instrset" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d6" edge="1" parent="1" source="intel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;elbow=vertical;strokeColor=#666666;fontSize=10;jettySize=auto;dashed=1;strokeColor=#999999;" target="instrset" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d7" edge="1" parent="1" source="ryzen" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;elbow=vertical;strokeColor=#666666;fontSize=10;jettySize=auto;dashed=1;strokeColor=#999999;" target="proccap" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c85bit" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF3FB;strokeColor=#6C9BD1;fontSize=12;" value="8-bit processor,&#xa;accumulator-based" vertex="1">
+          <mxGeometry height="50" width="200" x="40" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="c85addr" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF3FB;strokeColor=#6C9BD1;fontSize=12;" value="Few addressing modes&#xa;(direct, register, immediate)" vertex="1">
+          <mxGeometry height="55" width="200" x="40" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="c86bit" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF7E4;strokeColor=#82B366;fontSize=12;" value="16-bit processor,&#xa;segmented memory" vertex="1">
+          <mxGeometry height="50" width="200" x="280" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="c86addr" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF7E4;strokeColor=#82B366;fontSize=12;" value="More addressing modes,&#xa;more registers" vertex="1">
+          <mxGeometry height="50" width="200" x="280" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="arm" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2E8;strokeColor=#D79B65;fontSize=12;" value="ARM Cortex&#xa;RISC, low power,&#xa;mobile/embedded use" vertex="1">
+          <mxGeometry height="60" width="220" x="520" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="intel" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2E8;strokeColor=#D79B65;fontSize=12;" value="Intel Core&#xa;x86 CISC, superscalar,&#xa;multi-core, hyper-threading" vertex="1">
+          <mxGeometry height="65" width="220" x="520" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="instrset" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FBE5E7;strokeColor=#C0504D;fontSize=12;" value="Instruction Set Complexity&#xa;(CISC vs RISC)" vertex="1">
+          <mxGeometry height="55" width="220" x="780" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="addrmodes" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FBE5E7;strokeColor=#C0504D;fontSize=12;" value="Addressing Mode&#xa;Richness" vertex="1">
+          <mxGeometry height="50" width="220" x="780" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="proccap" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FBE5E7;strokeColor=#C0504D;fontSize=12;" value="Processing Capability&#xa;(bit-width, cores, clock)" vertex="1">
+          <mxGeometry height="55" width="220" x="780" y="375" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

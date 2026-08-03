@@ -1,0 +1,92 @@
+<mxfile host="app.diagrams.net" agent="Claude">
+  <diagram name="Q2_Bus_Structures_Performance" id="Q2_Bus_Structures_Performance">
+    <mxGraphModel dx="1030" dy="562" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="920" pageHeight="560" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;fontSize=15;fontStyle=1;fontColor=#333300;" value="BUS STRUCTURES &amp;&#xa;SYSTEM PERFORMANCE" vertex="1">
+          <mxGeometry height="70" width="300" x="370" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="bus" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DDEBF7;strokeColor=#6C9BD1;fontSize=13;fontStyle=1;" value="Bus Structures" vertex="1">
+          <mxGeometry height="50" width="220" x="40" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="hier" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF3FB;strokeColor=#6C9BD1;fontSize=12;" value="Hierarchical Bus&#xa;local + system + backplane&#xa;levels, balances&#xa;speed and cost" vertex="1">
+          <mxGeometry height="80" width="220" x="40" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="perf" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E2EFDA;strokeColor=#82B366;fontSize=13;fontStyle=1;" value="Performance Factors" vertex="1">
+          <mxGeometry height="50" width="220" x="320" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="cpi" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF7E4;strokeColor=#82B366;fontSize=12;" value="CPI&#xa;(Clock cycles Per&#xa;Instruction)" vertex="1">
+          <mxGeometry height="60" width="220" x="320" y="415" as="geometry" />
+        </mxCell>
+        <mxCell id="transfer" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCE4D6;strokeColor=#D79B65;fontSize=13;fontStyle=1;" value="Data Transfer Speed" vertex="1">
+          <mxGeometry height="50" width="220" x="700" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="efficiency" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCE4D6;strokeColor=#D79B65;fontSize=13;fontStyle=1;" value="Overall System&#xa;Efficiency" vertex="1">
+          <mxGeometry height="55" width="220" x="670" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="title" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;elbow=vertical;strokeColor=#666666;fontSize=10;jettySize=auto;" target="bus" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="bus" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;elbow=vertical;strokeColor=#666666;fontSize=10;jettySize=auto;" target="single" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="bus" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;elbow=vertical;strokeColor=#666666;fontSize=10;jettySize=auto;" target="multi" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="bus" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;elbow=vertical;strokeColor=#666666;fontSize=10;jettySize=auto;" target="hier" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="title" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;elbow=vertical;strokeColor=#666666;fontSize=10;jettySize=auto;" target="perf" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="perf" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;elbow=vertical;strokeColor=#666666;fontSize=10;jettySize=auto;" target="exectime" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="perf" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;elbow=vertical;strokeColor=#666666;fontSize=10;jettySize=auto;" target="clock" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="perf" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;elbow=vertical;strokeColor=#666666;fontSize=10;jettySize=auto;" target="cpi" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d1" edge="1" parent="1" source="single" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;elbow=vertical;strokeColor=#666666;fontSize=10;jettySize=auto;dashed=1;strokeColor=#999999;" target="transfer" value="limits">
+          <mxGeometry relative="1" x="0.2284" y="-15" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d2" edge="1" parent="1" source="multi" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;elbow=vertical;strokeColor=#666666;fontSize=10;jettySize=auto;dashed=1;strokeColor=#999999;" target="transfer" value="increases">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d3" edge="1" parent="1" source="hier" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;elbow=vertical;strokeColor=#666666;fontSize=10;jettySize=auto;dashed=1;strokeColor=#999999;" target="transfer" value="optimises">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="transfer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;elbow=vertical;strokeColor=#666666;fontSize=10;jettySize=auto;" target="clock" value="fewer wait cycles needed">
+          <mxGeometry relative="1" x="0.1579" y="-5" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="clock" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;elbow=vertical;strokeColor=#666666;fontSize=10;jettySize=auto;" target="cpi" value="contributes to">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="cpi" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;elbow=vertical;strokeColor=#666666;fontSize=10;jettySize=auto;" target="exectime" value="determines">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="exectime" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;elbow=vertical;strokeColor=#666666;fontSize=10;jettySize=auto;" target="efficiency" value="lower time = higher">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="single" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF3FB;strokeColor=#6C9BD1;fontSize=12;" value="Single Bus&#xa;one shared pathway,&#xa;simple &amp; cheap,&#xa;causes contention" vertex="1">
+          <mxGeometry height="75" width="220" x="40" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="multi" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF3FB;strokeColor=#6C9BD1;fontSize=12;" value="Multi-Bus&#xa;separate buses per&#xa;component, parallel&#xa;transfers, faster" vertex="1">
+          <mxGeometry height="75" width="220" x="40" y="335" as="geometry" />
+        </mxCell>
+        <mxCell id="clock" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF7E4;strokeColor=#82B366;fontSize=12;" value="Clock Cycles&#xa;(basic time unit&#xa;of the CPU)" vertex="1">
+          <mxGeometry height="60" width="220" x="320" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="exectime" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF7E4;strokeColor=#82B366;fontSize=12;" value="CPU Execution Time&#xa;Time = IC x CPI x&#xa;Clock Cycle Time" vertex="1">
+          <mxGeometry height="65" width="220" x="320" y="240" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
